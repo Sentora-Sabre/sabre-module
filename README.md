@@ -1,7 +1,7 @@
-# ZAUS 
-# (Z)Panel (AU)to Billing (S)oftware
+# SABRE 
+# (S)entora (A)uto (B)illing Softwa(RE)
 
-* Version: 3.9.0
+* Version: 3.9.1
 * <a href="http:sabre-software.com" target="_blank">Website</a>
 * [Support](#)
 * [Report Bugs](#)

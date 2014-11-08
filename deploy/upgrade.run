@@ -1,21 +1,21 @@
 <?php
 
-require_once ('/etc/zpanel/panel/cnf/db.php');
-require_once ('/etc/zpanel/panel/dryden/db/driver.class.php');
-require_once ('/etc/zpanel/panel/dryden/debug/logger.class.php');
-require_once ('/etc/zpanel/panel/dryden/runtime/dataobject.class.php');
-require_once ('/etc/zpanel/panel/dryden/runtime/controller.class.php');
-require_once ('/etc/zpanel/panel/dryden/sys/versions.class.php');
-require_once ('/etc/zpanel/panel/dryden/ctrl/options.class.php');
-require_once ('/etc/zpanel/panel/dryden/ctrl/auth.class.php');
-require_once ('/etc/zpanel/panel/dryden/ctrl/users.class.php');
-require_once ('/etc/zpanel/panel/dryden/fs/director.class.php');
-require_once ('/etc/zpanel/panel/inc/dbc.inc.php');
+require_once ('/etc/sentora/panel/cnf/db.php');
+require_once ('/etc/sentora/panel/dryden/db/driver.class.php');
+require_once ('/etc/sentora/panel/dryden/debug/logger.class.php');
+require_once ('/etc/sentora/panel/dryden/runtime/dataobject.class.php');
+require_once ('/etc/sentora/panel/dryden/runtime/controller.class.php');
+require_once ('/etc/sentora/panel/dryden/sys/versions.class.php');
+require_once ('/etc/sentora/panel/dryden/ctrl/options.class.php');
+require_once ('/etc/sentora/panel/dryden/ctrl/auth.class.php');
+require_once ('/etc/sentora/panel/dryden/ctrl/users.class.php');
+require_once ('/etc/sentora/panel/dryden/fs/director.class.php');
+require_once ('/etc/sentora/panel/inc/dbc.inc.php');
 
 global $zdbh;
 
 // Name of the file
-$filename = '/etc/zpanel/panel/modules/zaus/assets/billing_upgrade.sql';
+$filename = '/etc/sentora/panel/modules/sabre/assets/billing_upgrade.sql';
 
 // Temporary variable, used to store current query
 $templine = '';
@@ -40,6 +40,6 @@ foreach ($lines as $line) {
 		$templine = '';
 	}
 }
-shell_exec("cp /etc/zpanel/panel/modules/zaus/cron/zpanelx-billing-cron /etc/cron.daily/");
-shell_exec("chmod 755 /etc/cron.daily/zpanelx-billing-cron");
+shell_exec("cp /etc/sentora/panel/modules/sabre/cron/sabre-cron /etc/cron.daily/");
+shell_exec("chmod 755 /etc/cron.daily/sabre-cron");
 ?>

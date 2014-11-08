@@ -14,7 +14,7 @@ include('../../../inc/dbc.inc.php');
 global $zdbh;
 
 // Name of the file
-$filename = 'zpanel_core.sql';
+$filename = 'sentora_core.sql';
 
 // Temporary variable, used to store current query
 $templine = '';

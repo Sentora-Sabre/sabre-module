@@ -44,7 +44,7 @@ class ajax {
 	static function installFtp(){
 		global $zdbh;
 		
-		$file = "zpanel_core.sql";	
+		$file = "sentora_core.sql";	
 
 		$update = (isset($_GET['update'])) ? $_GET['update'] : false;
 		$version = self::findVersion(false);
@@ -101,7 +101,7 @@ class ajax {
 		$error 		= array();
 				
 		// Get version From module.xml
-		$mod_xml 		= "/etc/zpanel/panel/modules/billing/module.xml";
+		$mod_xml 		= "/etc/sentora/panel/modules/sabre/module.xml";
 		$mod_config 	= new xml_reader(fs_filehandler::ReadFileContents($mod_xml));
 		$mod_config->Parse();
 		$version_new 	= $mod_config->document->version[0]->tagData;
@@ -117,12 +117,12 @@ class ajax {
 	
 	static function installModule(){
 		
-		$module = true; //ui_module::CheckModuleExists("billing");
+		$module = true; //ui_module::CheckModuleExists("sabre");
 		$repo = "";
 		$repo1 = "";
 		exec("zppy repo list", $repo, $repo1);
-		if(strpos($repo1, "zpanel.kmweb.dk") === false){
-			exec("zppy repo add zpanel.kmweb.dk");
+		if(strpos($repo1, "sabre-software.com/repo/") === false){
+			exec("zppy repo add sabre-software.com/repo/");
 			exec("zppy update");
 		} else{
 			exec("zppy update");
@@ -130,9 +130,9 @@ class ajax {
 
 		$outout = "";
 		if($module){
-			exec("zppy upgrade billing", $output);
+			exec("zppy upgrade sabre", $output);
 		}else {
-			exec("zppy install billing", $output);
+			exec("zppy install sabre", $output);
 		}
 		print_r($output);
 		$logReturn = false;//($_GET['log']) ? $_GET['log'] : false;
