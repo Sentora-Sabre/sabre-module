@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<name>ZAUS Billing</name>
+	<version>3.9.0</version>
+	<defaultcat>Reseller</defaultcat>
+	<desc>Billing System</desc>
+	<type>User</type>
+	<authorname>Martin Kollerup and Others</authorname>
+	<authoremail>module@sabre-software.com</authoremail>
+	<authorurl>http://sabre-software.com</authorurl>
+	<updateurl>http://sabre-software.com/repo/zaus/zaus.xml</updateurl>
+</module>

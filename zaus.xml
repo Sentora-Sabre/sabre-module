@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    	<name>ZAUS Billing</name>
+   	<version>3.9.0</version>
+    	<defaultcat>Reseller</defaultcat>
+    	<type>User</type>
+    	<desc>This module enables users to signup for your hosting packages using the front-end website software.</desc>
+	<updatedesc></updatedesc>
+    	<zpversion>10.1.0, 10.1.1</zpversion>
+	<latestversion>3.9.0</latestversion>
+    	<authorname>Nigel Caldwell</authorname>
+    	<authoremail>zaus@sabre-software.com</authoremail>
+    	<authorurl>http://sabre-software.com/</authorurl>
+    	<updateurl>http://sabre-software.com/repo/zaus/zaus.xml</updateurl>
+    	<downloadurl>http://sabre-software.com/repo/zaus/zaus.zpp</downloadurl>
+</module>
