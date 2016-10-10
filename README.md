@@ -2,7 +2,7 @@
 # (S)entora (A)uto (B)illing Softwa(RE)
 
 * Version: 3.9.1
-* <a href="http:sabre-software.com" target="_blank">Website</a>
+* <a href="http:sabre-software.tk" target="_blank">Website</a>
 * [Support](#)
 * [Report Bugs](#)
 
